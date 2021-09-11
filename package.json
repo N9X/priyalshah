@@ -1,0 +1,23 @@
+{
+  "name": "gitpriyalshah",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css":"tailwindcss build src/style.css -o public/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/N9X/priyalshah.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/N9X/priyalshah/issues"
+  },
+  "homepage": "https://github.com/N9X/priyalshah#readme",
+  "dependencies": {
+    "tailwindcss": "^2.2.15"
+  }
+}
