@@ -1,0 +1,8 @@
+Work section 
+- name
+- description 
+- image
+
+
+
+add behance and linkedin icons to footer
