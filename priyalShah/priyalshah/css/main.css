@@ -212,16 +212,63 @@ footer a:not(.nav-link) {
   margin: 0 auto;
 }
 .bg-blue{background-color: #0000ee;}
+.bg-opacityblue{background-color: #EBEBFE;}
+.text-salonexpblue{color: #0C669D;}
 .text-blue{color: #0000ee;}
 .text-white{color: #ffffff;}
 .text-small {
   font-size: 0.875rem;
 }
-
+/* header */
+.customMenu{
+  justify-content: end !important;
+}
+.customMenu ul li{
+  list-style-type: none;
+  display: inline;
+}
+/* header */
 .text-uppercase {
   letter-spacing: 0.05em;
 }
-
+/* color palet */
+.color{
+  padding:20px;
+  margin: 0 2px;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+}
+.colorOne{
+  background-color: #ffffff;
+  border: 1px solid black;
+}
+.colorTwo{
+  background-color: #0000ee;
+}
+.colorThree{
+  background-color: #d9d9fd;
+}
+.colorFour{
+  background-color: #eeeeee;
+}
+.colorcustomOne{
+  background-color: #ffffff;
+  border: 1px solid black;
+}
+.colorcustomTwo{
+  background-color: #D2D2D2;
+}
+.colorcustomThree{
+  background-color: #33B2FF;
+}
+.colorcustomFour{
+  background-color: #000000;
+}
+.colorName{
+  margin: 10px 9px;
+}
+/* color palet */
 .hover-effect {
   transition: transform .18s ease-in-out;
 }
@@ -235,7 +282,7 @@ footer a:not(.nav-link) {
   display: inline;
   width: auto;
 }
-.custom-marker, .custom-marker-black {
+.custom-marker, .custom-marker-black, .custom-marker-blue {
   position: relative;
   display: inline;
   width: auto;
@@ -255,6 +302,14 @@ footer a:not(.nav-link) {
   position: absolute;
   left: 0px;
   border-bottom: 2px solid black;
+}
+.custom-marker-blue:after {
+  content: "";
+  width: 70px;
+  height: 40px;
+  position: absolute;
+  left: 0px;
+  border-bottom: 2px solid blue;
 }
 .marker-center {
   padding-right: 0;
@@ -278,6 +333,143 @@ footer a:not(.nav-link) {
 }
 
 .bg-blue-opacity{background-color: #EBEBFE;}
+/* design flow css with responsive */
+.workflowsection{
+  background-color: #0000EE;
+  position: relative;
+  font-size: 12px;
+  font-family: sans-serif;
+  margin: 0px;
+  padding: 0;
+}
+.custom-container{
+  max-width: 1690px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+.main-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  margin:0 -15px;
+}
+.main-wrapper .title, .main-wrapper .product-img{
+  width: 50%;
+  display: inline-block;
+  position: relative;
+}  
+.product-img{
+  padding: 0 0 0 95px;
+  padding-bottom: 150px;
+}
+.main-wrapper .product-img-2{
+  width: 50%;
+  padding:0 95px 0 0;
+  margin-top: -560px;
+  position: relative;
+}
+.main-wrapper .product-img-3{
+  width: 50%;
+  padding:0 95px 0 0;
+  margin-top: -560px;
+  position: relative;
+}
+.main-wrapper .product-img:not(:last-child):after{
+  display: block;
+  content: "";
+  background-image: url("../images/image-19.svg");
+  width: 519px;
+  height: 51px;
+  position: absolute;
+  left: 0;
+  bottom: 60px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.main-wrapper .product-img-2:after, .main-wrapper .product-img-3:after{
+  display: block;
+  content: "";
+  background-image: url("../images/image-17.svg");
+  width: 519px;
+  height: 51px;
+  position: absolute;
+  right: 0;
+  bottom: 620px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media only screen and (max-width:1690px) {
+  .main-wrapper .product-img:not(:last-child):after, .main-wrapper .product-img-2:after, .main-wrapper .product-img-3:after{
+      width: 60%;
+      height: 51px;
+  }
+  .main-wrapper .product-img{
+      padding: 0 15px 0 65px;
+      padding-bottom: 150px;
+  }
+  .main-wrapper .product-img-2, .main-wrapper .product-img-3{
+      padding:0 65px 0 15px;
+  }
+}
+@media only screen and (max-width:1400px) {
+  .main-wrapper .product-img{
+      padding: 0 15px 0 30px;
+      padding-bottom: 80px;
+  }
+  .main-wrapper .product-img-2{
+      margin-top: -430px;
+  }
+  .main-wrapper .product-img-3{
+      margin-top: -430px;
+  }
+  .main-wrapper .product-img:not(:last-child):after{
+      bottom: 10px;
+  }
+  .main-wrapper .product-img-2:after{
+      bottom: 470px;
+  }
+  .main-wrapper .product-img-3:after{
+      bottom: 470px;
+  }
+  .product-img-2{
+      padding:0 30px 0 15px;
+  }
+}
+@media only screen and (max-width:1200px) {
+  .main-wrapper .product-img-2{
+      margin-top: -260px;
+  }
+  .main-wrapper .product-img-3{
+      margin-top: -290px;
+  }
+  .main-wrapper .product-img-3:after{
+      bottom: 340px;
+  }
+  .main-wrapper .product-img-2:after{
+      bottom: 310px;
+  }
+}
+@media only screen and (max-width:767px){
+  .main-wrapper .product-img:not(:last-child):after, .main-wrapper .product-img-2:after, .main-wrapper .product-img-3:after{
+      display: none;
+  }
+  .main-wrapper{
+      display: block;
+  }
+  .main-wrapper .title, .main-wrapper .product-img, .main-wrapper .product-img-2, .main-wrapper .product-img-3{
+      width: 100%;
+      padding:0 15px;
+  } 
+  .main-wrapper .product-img-2, .main-wrapper .product-img, .main-wrapper .product-img-2{
+      margin-top: 30px;
+  }
+}
+/* design flow css with responsive */
+
 
 @media (max-width: 575.98px) {
   .marker {
@@ -293,3 +485,58 @@ footer a:not(.nav-link) {
 .entry-title a {
   text-decoration: none;
 }
+/* salon express high Fidelity Design styling start */
+.high-fidelity{
+  position: relative;
+}
+.blue-bg{
+  background: #EDF9FF;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+.d-flex-center{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.text-center{
+  text-align: center;
+}
+.w-md-6{
+  width: 50%;
+  padding: 0 15px;
+}
+.high-fidelity p{
+  font-size: 28px;
+  line-height: 34px;
+  color: #000000;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+}
+.text-blue{
+  color: #0C669D;
+}
+h5{
+  font-size: 36px;
+  line-height: 42px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  margin-bottom:20px;
+}
+.number-heading{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: rgba(12, 102, 157, 0.3);
+  font-size: 70px;
+  line-height: 76px;
+  display: block;
+}
+section{
+  padding: 100px 0 0;
+}
+
+
+
+/* salon express high Fidelity Design styling end */
