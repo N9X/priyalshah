@@ -1,0 +1,75 @@
+/* salon express high Fidelity Design styling start */
+.high-fidelity{
+    position: relative;
+  }
+  .blue-bg{
+    background: #EDF9FF;
+  }
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+  .d-flex-center{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .text-center{
+    text-align: center;
+  }
+  .w-md-6{
+    width: 50%;
+    padding: 0 15px;
+  }
+  .high-fidelity p{
+    font-size: 28px;
+    line-height: 34px;
+    color: #000000;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+  }
+  .text-blue{
+    color: #0C669D;
+  }
+  h5{
+    font-size: 36px;
+    line-height: 42px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin-bottom:20px;
+  }
+  .number-heading{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: rgba(12, 102, 157, 0.3);
+    font-size: 70px;
+    line-height: 76px;
+    display: block;
+  }
+  section{
+    padding: 100px 0 0;
+  }
+  
+  
+  
+  /* salon express high Fidelity Design styling end */
+  .color{
+    padding:20px;
+    margin: 0 2px;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+  }
+  .colorcustomOne{
+    background-color: #ffffff;
+    border: 1px solid black;
+  }
+  .colorcustomTwo{
+    background-color: #D2D2D2;
+  }
+  .colorcustomThree{
+    background-color: #33B2FF;
+  }
+  .colorcustomFour{
+    background-color: #000000;
+  }

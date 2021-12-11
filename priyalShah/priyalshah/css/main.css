@@ -485,58 +485,75 @@ img{
 .entry-title a {
   text-decoration: none;
 }
-/* salon express high Fidelity Design styling start */
-.high-fidelity{
+/* kitchen story start */
+.flex {
+  display: flex;
+  justify-content: space-between;
+  }
+
+  .masonry {
+  flex-direction: row;
+  }
+  .masonry__section {
+      flex-direction: column;
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 0 50%;
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 48%;
+  }
+.masonry__section + .masonry__section{
+  margin-left: 30px;
+}
+.masonry__article{
+  margin-top: 30px;
+}
+/* masonary */
+
+
+
+.gold-bg{
+  background: #976D21;
+}
+.mb-20{
+  bottom: -80px;
+  position: absolute;
+}
+.ml-auto{
+  margin-left: auto;
+}
+.relative{
   position: relative;
 }
-.blue-bg{
-  background: #EDF9FF;
-}
-img{
-  max-width: 100%;
-  height: auto;
-}
-.d-flex-center{
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.text-center{
-  text-align: center;
-}
-.w-md-6{
-  width: 50%;
-  padding: 0 15px;
-}
-.high-fidelity p{
-  font-size: 28px;
-  line-height: 34px;
-  color: #000000;
-  font-weight: 400;
-  font-family: 'Poppins', sans-serif;
-}
-.text-blue{
-  color: #0C669D;
-}
-h5{
-  font-size: 36px;
-  line-height: 42px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
-  margin-bottom:20px;
-}
-.number-heading{
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
-  color: rgba(12, 102, 157, 0.3);
-  font-size: 70px;
-  line-height: 76px;
-  display: block;
-}
-section{
-  padding: 100px 0 0;
+@media only screen and (max-width:767px) {
+  .w-md-6{
+      width: 100%;
+      padding: 0 15px;
+  }
+  .mb-20{
+      position: relative;
+      bottom: unset;
+  }
+  .masonry {
+      flex-direction: column;
+  }
+  .masonry__section {
+      flex-direction: column;
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 0 100%;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+  }
+  .masonry__section + .masonry__section{
+      margin-left: 0px;
+  }
 }
 
+@media only screen and (max-width:1024px) {
+  .mb-20{
+      /* margin-bottom: -330px; */
+  }
+}
 
-
-/* salon express high Fidelity Design styling end */
+/* kitchen story end */
