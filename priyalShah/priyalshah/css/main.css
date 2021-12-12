@@ -527,6 +527,7 @@ img{
 .mb-20{
   bottom: -80px;
   position: absolute;
+  z-index: 9
 }
 .ml-auto{
   margin-left: auto;
