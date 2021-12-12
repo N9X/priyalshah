@@ -213,9 +213,11 @@ footer a:not(.nav-link) {
 }
 .bg-blue{background-color: #0000ee;}
 .bg-opacityblue{background-color: #EBEBFE;}
+.bg-peach{background-color: #FFF8EB;}
 .text-salonexpblue{color: #0C669D;}
 .text-blue{color: #0000ee;}
 .text-white{color: #ffffff;}
+.text-orange{color: #FC8101;}
 .text-small {
   font-size: 0.875rem;
 }
@@ -239,6 +241,13 @@ footer a:not(.nav-link) {
   width: 100px;
   border-radius: 100%;
 }
+.colorKSone{
+  background-color: #FC8101;
+}
+.colorKStwo{background-color: #976D21;}
+.colorKSthree{background-color: #ffffff;
+  border: 1px solid black;}
+.colorKSfour{background-color: #22252A;}
 .colorOne{
   background-color: #ffffff;
   border: 1px solid black;
